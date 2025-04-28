@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
-body{
-    font-family: "Plus Jakarta Sans", sans-serif;
+*{
+    font-family: Plus Jakarta Sans , sans-serif
 }
-header{
+header {
     width: 100%;
     height: 86px;
     background: #EFF0F3;
@@ -11,48 +11,52 @@ header{
     align-items: center;
     justify-content: center;
     position: fixed;
+    z-index: 1;
 }
-.head__w-1250{
+
+.head__w-1250 {
     width: 1250px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.head__w-1250 nav ul{
+
+.head__w-1250 nav ul {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
 }
-nav ul .with-icon a{
+
+nav ul .with-icon a {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
-header h2 span:first-of-type{
+
+header h2 span:first-of-type,
+footer h2 span:first-of-type {
     color: #001858;
     font-size: 36px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
 }
-header h2 span:last-of-type{
+
+header h2 span:last-of-type,
+footer h2 span:last-of-type {
     color: #6246EA;
     font-size: 18px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
 }
-header nav ul li{
+
+header nav ul li {
     color: #2B2C34;
     font-size: 20px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     text-transform: capitalize;
 }
-.with-icon:last-of-type{
+
+.with-icon:last-of-type {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,76 +66,81 @@ header nav ul li{
     background: #6246EA;
     color: #FFFFFE;
     font-size: 18px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
     text-transform: capitalize;
 }
+
 /*----------------------------section-greeting-----------------------------------*/
-.greeting{
-    height: 900px;
+.greeting {
+    width: 100%;
+    height: 814px;
     background: #EFF0F3;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.greeting__w-1250{
+
+.greeting__w-1250 {
     width: 1250px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.Hi-n-subscribe{
+
+.Hi-n-subscribe {
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     gap: 30px;
 }
-.greeting__w-1250 h1{
+
+.greeting__w-1250 h1 {
     width: 617px;
     color: #2B2C34;
     font-size: 64px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
+    text-transform: capitalize;
 }
-.greeting__w-1250 p{
+
+.greeting__w-1250 p {
     width: 652px;
     height: 50px;
     color: #9A9494;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-weight: 300;
     padding-left: 12px;
 }
-.p-wrapper{
+
+.p-wrapper {
     display: flex;
     align-items: center;
     height: 56px;
     border-left: 3px solid #2B2C34;
 }
-.greeting__w-1250 form{
+
+.greeting__w-1250 form ,
+.subscribe form{
     display: flex;
     gap: 20px;
 }
-.greeting__w-1250 form input[type="email"]{
+
+.greeting__w-1250 form input[type="email"] ,
+.subscribe form input[type="email"]{
     width: 444px;
-    height: 67px;
     border-radius: 8px;
-    background: #FFFFFE;
     border: none;
     padding: 21px 200px 21px 25px;
 }
-input[type="email"]::placeholder{
-    color: #C0C0C0;
+
+input[type="email"]::placeholder {
+    color: #c0c0c0;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-weight: 300;
 }
-.greeting__w-1250 form input[type="submit"]{
+
+.greeting__w-1250 form input[type="submit"] ,
+.subscribe form input[type="submit"]{
     display: flex;
     width: 145px;
     height: 67px;
@@ -142,19 +151,20 @@ input[type="email"]::placeholder{
     background: #6246EA;
     color: #FFFFFE;
     font-size: 20px;
-    font-style: normal;
     font-weight: 600;
-    line-height: normal;
 }
+
 /*----------------------------section-category-----------------------------------*/
-.category{
+.category {
     background: #EFF0F3;
     height: 500px;
+    width: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
 }
-.category__w-1250{
+
+.category__w-1250 {
     width: 1250px;
     display: flex;
     align-items: center;
@@ -162,38 +172,40 @@ input[type="email"]::placeholder{
     flex-direction: column;
     gap: 50px;
 }
-.category__w-1250 .browse{
+
+.category__w-1250 .browse {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.browse h3{
+
+.browse h3 {
     color: #2B2C34;
     font-size: 24px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     text-transform: capitalize;
 }
-.browse a{
+
+.browse a {
     color: #2B2C34;
     font-size: 20px;
-    font-style: normal;
     font-weight: 700;
-    line-height: normal;
     text-transform: capitalize;
     display: flex;
 }
-.browse a svg{
+
+.browse a svg {
     margin: 7px 2px 0 12px;
 }
-.category__w-1250 .grid-category{
+
+.category__w-1250 .grid-category {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 37px;
 }
-.category-cards{
+
+.category-cards {
     width: 220px;
     height: 280px;
     background: #FFFFFE;
@@ -206,7 +218,8 @@ input[type="email"]::placeholder{
     padding-left: 30px;
     transition: 0.5s;
 }
-.category-cards .svg-wrapper{
+
+.category-cards .svg-wrapper {
     width: 60px;
     height: 60px;
     border-radius: 7.458px;
@@ -215,16 +228,251 @@ input[type="email"]::placeholder{
     justify-content: center;
     align-items: center;
 }
-.category-cards:hover{
+
+.category-cards:hover {
     border-radius: 8px;
     background: #6246EA;
     scale: 1.02;
     transition: 0.5s;
 }
-.category-cards:hover h2{
+
+.category-cards:hover h2 {
     color: #FFFFFE;
     transition: 0.5s;
 }
+
+/*------------------------------ARTICLE------------------------------------*/
+.article {
+    background: #FFFFFE;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 80px auto;
+}
+
+.article__w-1250 {
+    width: 1250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.article-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.article-wrapper .head-article {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.article-wrapper .head-article h3 {
+    color: #2B2C34;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.article-wrapper .head-article a {
+    color: #2B2C34;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.article-wrapper .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.cards .card {
+    display: flex;
+    width: 300px;
+    height: 425px;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    background: #FFFFFE;
+    transition: 0.2s;
+}
+
+.cards .card:hover {
+    box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
+    transition: 0.2s;
+}
+
+.card .image-n-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.card .image-n-title h4 {
+    color: #2B2C34;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.card .author {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.card .author .date {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4.2px;
+}
+
+.card .author .date h5 {
+    color: #2B2C34;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.card .author .date p {
+    color: #2B2C34;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+
+.article__w-1250 button {
+    width: 165px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    background: #6246EA;
+    color: #FFFFFE;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/*--------------------------SUBSCRIBE--------------------------------*/
+.subscribe {
+    height: 453px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EFF0F3;
+}
+.subscribe>div {
+    width: 696px;
+    height: 337px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.circle{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background: #FFFFFE;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.subscribe div h2 {
+    color: #2B2C34;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 30px 0 10px 0;
+}
+.subscribe div p {
+    color: #C0C0C0;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+/*-----------------------FOOTER-----------------------------*/
+footer{
+    background: #E4E5E9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.foot_w-1250{
+    margin: 70px auto 50px auto;
+    width: 1250px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 160px;
+}
+footer .social-media{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+footer .social-media p{
+    color: #2B2C34;
+    font-size: 18px;
+    font-weight: 400;
+}
+footer .social-media .icons{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 30px;
+}
+footer .information{
+    display: flex;
+    gap: 95px;
+}
+footer .information div{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+footer .information div h3{
+    color: #2B2C34;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+footer .information div a{
+    color: #2B2C34;
+    font-size: 18px;
+    font-weight: 400;
+}
+hr{
+    width: 1250px;
+    height: 1px;
+    background: #C0C0C0;
+}
+footer>p{
+    color: #2B2C34;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 26px auto;
+}
+
+
+
+
+
+
 
 
 
